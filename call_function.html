@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>call() function</title>
+</head>
+<body>
+	<div id="penjumlahan"></div>
+	<div id="perkalian"></div>
+
+
+	<script>
+
+		
+		// Method call() javascript:
+		// * Dengan menggunakan call() method, kita dapat menulis sebuah method yang dapat di gunakan pada object yang berbeda
+		// * Metode call() dapat di gunakan untuk memanggil metode dengan object pemilik sebagai argument(parameter)
+
+			//Contoh ini memanggil methode fullName dari object person,menggunakan nya pada object person2
+			const person = {
+				fullName : function(){
+					return this.firstName + " " + this.lastName;
+				}
+			}
+			const person2 = {
+				firstName: "hadi",
+				lastName: "sucipto"
+			};
+
+			let full = person.fullName.call(person2);
+			document.getElementById('penjumlahan').innerHTML = full;
+
+
+			// method call() dengan argumen
+			// * Methode call() ini juga dapat meneriman argument:
+			const orang = {
+				namaLengkap : function(alamat, provinsi){//kita bisa tambhakan parameter di methode object
+					return `Nama : ${this.namaDepan} ${this.namaBelakang}\nAlamat : ${alamat} ${provinsi}`;
+				}
+			}
+			const orang1 = {	
+				namaDepan: "hadi",
+				namaBelakang: "san"
+			};
+
+			console.log(orang.namaLengkap.call(orang1, "bogak besar", "sumatera utara"));
+
+
+	</script>
+</body>
+</html>

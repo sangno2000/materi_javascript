@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Belajar perkalian</title>
+	<style>
+		body {
+			background: #fdf1dd;
+			color: #fdf1dd;
+			margin: 0;
+			padding: 0;
+
+		}
+		.container {
+			background-color: white;
+			color: black;
+			width: 80%;
+			margin: auto;
+			
+		}
+		.container #perkalian {
+			height: 800px;
+
+		}
+		.container #penjumlahan {
+			height: 800px;
+			color: black;
+			background-color: grey;
+
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div id="perkalian">
+			<h1>Belajar perkalian dasar</h1>
+			<p>pasti dari adik-adik yang masih duduk di bangku sekolah sd pernah di suruh guru untuk menghafal perkalian bukan?</p>
+			<p>Nah.. Di sini kakak mau bagi tips dan juga list perkalian yang nanti nya bisa kalian hafal untuk masa depan kalian nih</p>
+			docu
+		</div>
+		<div id="penjumlahan">
+			<button id="btn">klik saya</button>
+		</div>
+		
+
+	</div>
+
+
+	<script>
+
+		
+
+		function perkalian1 (a,b) {
+ 			if (a === 1+1) {
+ 				return;
+ 			}
+ 			if (b === 1) {
+ 				return;
+ 			}
+
+	 		perkalian1(a-1+1 ,b-1)
+	 		let hasil = a * b;
+	 		console.log(`${b-1}.  ${a} x ${b-1} = ${hasil-1}`)
+	 		if (b === 10) {
+	 			document.write(`${b}. ${a} x ${b} = ${hasil}`)
+	 		}
+		} 
+		
+		perkalian1(1,10)
+
+		console.log("\n\n")
+
+		// function perkalian2 (c,d) {
+ 	// 		if (c === 1) {
+ 	// 			return;
+ 	// 		}
+ 	// 		if (d === 1) {
+ 	// 			return;
+ 	// 		}
+
+	 // 		perkalian2(c-1+1 ,d-1)
+	 // 		let hasil2 = c * d;
+	 // 		return this.d-1 + c + "x" + c + d-1 + "=" + hasil2-2;
+	 // 		if ( d === 10) {
+	 // 			return.this. d + c + "x" + d + "=" + hasil2
+	 // 		}
+		// } 
+		// perkalian2(2,10)
+
+		console.log("\n\n")
+
+		const sayHello = (name) => {
+			console.log(`Hallo  ${name}`)
+		}
+		sayHello("hadi sucipto")
+
+		
+		let hello = "";
+		hello = function() {
+			document.getElementById('perkalian').innerHTML += this;
+		}
+		window.addEventListener("load", hello);
+		document.getElementById('btn').addEventListener("click", hello);
+		if (true) {}			
+
+			
+			
+
+
+	</script>
+	
+</body>
+</html>

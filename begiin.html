@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body style="background-color: aquamarine; color: rgb(24, 18, 10);">
+     <h1 id="sangno">ini budi</h1>
+    <script>
+        
+      // function person (value, ...nama){
+        // for (let nomor of nama){
+        //   kosong += nomor
+        // }
+    //     for(let nomor of nama){
+
+    //     console.log(`${nomor}`)
+    //     }
+        
+
+    //   }
+    // person(1, "hadi", "miranda", "wiwin", "agus")
+
+
+      const person = {
+       
+        fullName: function(){
+          return `${this.firstName} ${this.lastName}`
+        }
+
+      }
+      const person2 = {
+        firstName: "hadi",
+        lastName: "san"
+      }
+      const hasil = person.fullName.call(person2);
+      console.log(hasil)
+
+
+    </script>        
+</body>
+</html>

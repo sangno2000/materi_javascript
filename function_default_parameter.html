@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>function default parameter</title>
+</head>
+<body>
+	<script>
+		// function jelas(nama, alamat = "default value parameter"){
+		// 	console.info(nama);
+		// 	console.info(alamat);
+			
+		// }
+	
+		// jelas("hadi sucipto", undefined);
+		
+			// function penjumlahan(buah, ...buahan){
+			// 	let hasil = 0;
+			// 	for(let item of buahan){
+			// 		// hasil += item;
+			// 	}
+			// console.log(`Total ${buah} sebanyak ${item}`)
+			// }
+			// penjumlahan("jeruk", 12,10,3,12,124);
+			// penjumlahan("nangka", 32,12,345,1);
+
+			function defaul(menu, ...list){
+				let hasil = 0;
+				for (let jumlah of list){
+					hasil += jumlah;
+				}
+					console.log(`hasit6l dari menu di tambah list adalah ${hasil}`)
+			}
+			defaul("rendang", 3,12,3,10,10);
+			defaul("x",10,10);
+			defaul("f", 3,12,3,10,10);
+			 	
+
+
+	</script>
+</body>
+</html>             

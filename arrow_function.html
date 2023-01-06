@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Arrow function</title>
+</head>
+<body>
+	<script>
+		// Arrow function:
+		// * Arrow function adalah alternatif pembuatan function yang lebih baru dan sederhana
+		// * Namun terdapat limitasi dalam penggunaan nya, dan juga tidak bisa di gunakan dalam segala situasi
+		// * Dinamakan arrow function karena pembuatan function nya menggunakan tanda panah 
+		// * Berikut contoh kekurangan dari arrow function:
+		// 	# Tidak memiliki fitur argument object
+		// 	# Tidak bisa menggunakan function generator
+		// 	# Tidak bisa mengakses keyword (this)
+		// 	# Tidak bisa mengakses keyword (super)
+
+		//  Contoh:
+		const sayHi = (nama) => {
+			console.log(`hello ${nama}`)
+		}
+		sayHi("hadi")
+
+		// Arrow function tanpa block:
+		// * Jika arrow function isi nya sederhana atau sedikit,kita juga bisa membuat arrow function tanpa menggunakan tanda kurung kurawal,ini tentu nya akan terlihat lebih simple.
+
+		// Contoh:
+		const sayHello = (name) => console.log(`hello ${name}`);
+		sayHello("hadi sucipto");
+
+		// Arrow function return value:
+		// * Arrow function juga bisa mengembalikan nilai value,sama seperti function biasa
+		// * Jika menggunakan block, maka kita perlu menggunakan kata kunci return
+		// * Tapi jika tidak menggunakan block tanda kurung kurawal, kita tidak perlu menggunakan kata kunci return.
+		// Contoh:
+		const sum = (first, second) => {
+			return first + second //jika statement yang di berikan panjang atau complex bisa menggunakan block
+		}
+		console.log(sum(1,10))
+		// ========================================
+
+		const sum2 = (first1, second2) => first1 + second2; //untuk staement yang sedikit kita juga bisa tanpa meggunakan return untuk mengembalikan nilai
+		console.log(sum2(2, 18))
+
+		// Arrow function tanpa kurung parameter:
+		// * Jika paramater di arrow function hanya satu,kita bisa tidak menggunakan kurung pada parameter.tapi kalau lebih dari satu harus menambahkan tanda kurung .
+		// Contoh:
+
+		const sayHallo = naran => console.log(naran);//tanpa tanda kurung di parameter nya,
+		sayHallo("sangno")
+
+
+
+
+	</script>
+	
+</body>
+</html>

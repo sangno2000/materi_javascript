@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>operator nullish coalesting</title>
+</head>
+<body>
+	<script>
+		//contoh pertama
+		// let contoh="benar";
+
+		// let data=contoh;
+		
+		// if (data===undefined || data===null) {
+		// 		data="ini adalah nilai true default,yaitu undefined ,jika nilai bernilai true undefined atau null maka ini akan muncul";
+		// 		alert(data)
+		// }else {
+
+		// 	alert("nilai yang kamu buat adalah false,karena variable memilliki data isi")
+		// }
+
+		//contoh kedua
+
+		// let contoh2;
+		// result=contoh2 ?? "ini keluar jika bernilai true" ;
+		// document.write(result);
+
+
+		// operator ini berfungsi untuk menampilkan hasil dari value undefined dan null .jika variable bernilai true(undefined dan null) ,maka hasil nya akan tampil sebagai default (true)
+		
+
+		// let juga=10;
+		// if (juga===undefined || juga===null) {
+		// 	alert("ini adalah hasil true,karena variable beernilai undefined atau false")
+		// }else {
+		// 	alert("ini akan muncul jika jika variale bernilai false atau variable bernilai string atau number")
+		// }
+
+		let iniKata="undefined"
+		let kata=iniKata?? "ini akan di keluarkan jika nilai bernilai null/undefined"
+
+		if (iniKata == undefined || iniKata == null) {
+			alert("ini akan di keluarkan jika nilai bernilai null/undefined")
+		}else {
+			alert("ini akan muncul jika nilai bernilai false")
+		}
+
+		/*if (kata===undefined || kata===null) {
+			alert("ini adalah hasil dari undefined dan null")
+		}
+		else {
+			alert("ini akan muncul ketika variable memiliki value selain jenis undefined dan null")
+		}*/
+		console.log(kata)
+
+	</script>
+</body>
+</html>

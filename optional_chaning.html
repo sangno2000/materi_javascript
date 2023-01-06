@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>optional chaining</title>
+</head>
+<body>
+	<script>
+		let person= {
+	alamat: {
+		desa:"bogak besar"
+	}
+};
+let informasi=person?.alamat?.desa;
+console.log(informasi)
+
+//optional chaining operator merupakan operator yang di gunakan untuk mengamankan ketika kita ingin menngakses property sebuah object data nullish
+
+//jika kita mencoba mengakses data property dari sebuah object dari data nullish tanpa menggunakan optional chaining operator,maka akan terjadi error
+//Operator ini di gunakan untuk mengakses data pada type data object
+let tinggal= {
+	dusun: {
+		alamat:"dusun 1 desa bogak besar"
+	}
+}
+let alamatLengkap=tinggal?.dusun?.alamat;
+console.log(alamatLengkap);
+
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Rest parameter</title>
+</head>
+<body>
+	<!-- Rest parameter
+		==> rest parameter adalah fitur di mana kita bisa mengirim data sebanyak-banyak nya pada satu parameter, dan secara otomatis akan di konversi menjadi array.
+		==> untuk membuat parameter, ada ketentuan nya
+		==> rest parameter hanya boleh ada satu di function, tidak boleh lebih dari satu.
+		==> rest parameter hanya boleh berada di posisi akhir, tidak boleh ada yang di depan atau di tengah,kecuali memang cuma ada satu parameter.
+		==> di bahasa pemprograman lain,ada juga yang bilang ini adalah variable argument.
+
+		contoh: 
+ -->
+		<script>
+			const sum = (nama, ...data) =>{ //menggunakan arrow function
+				let total = 0;
+				for(let items of data) {
+					total += items;
+				}
+				console.log(`Total ${nama} is ${total}`)
+			}
+			sum("jeruk", 1,12,3,4,5,1)
+
+			sum("mangga", 1,12,3,4,5,13)
+			sum("apple", 1,12,3,4,5,1) 
+
+			sum("avocado", ...[10,1,32,12,43]); //untuk menambahkan data array yang sudah ada kedalam parameter ,bisa menggunakan spread syntax seperti di atas
+
+			
+		</script>
+<!-- 
+		Didalam rest parameter erat kaitan nya
+		dengan Spread Syntax;
+		==> kadang kita terlanjujur memiliki data berupa array
+		==> Tapi untung nya kita juga bisa mengirim array ke rest parameter
+		==> kita bisa gunakan ...(titik tiga kali) di ikuti dengan array nya ketika memanggil function
+		==> fitur ini dinamakan spread syntax -->
+		
+
+	
+</body>
+</html>

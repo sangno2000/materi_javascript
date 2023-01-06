@@ -1,0 +1,30 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+ 	<meta charset="UTF-8">
+ 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 	<title>Function di dalam function</title>
+ </head>
+	<script>
+		// Function dalam function/Nested function(bersarang):
+		// * Tidak ada batasan di mana kita bisa membuat function.
+		// * Kita juga bisa membuat function di dalam sebuah function.
+		// * Function yang terdapat di dalam function di sebut inner function.
+		// * Inner function hanya bisa di akses di tempat kita membuat function nya,kita tidak dapat menagakses dari luar function nya,ini di karena kan javscript tidak bisa akses data yang berada di luar scope.
+		// Contoh:
+
+		function outer(){
+			function inner(){
+				console.log("inner")
+			}
+
+			inner(); //ini akan menghasil kan "inner"
+
+		}
+		outer();
+		inner(); //karena mengkases data di luar outer function,ini akan terjadi error "Error is not defined"
+
+
+	</script> 	
+ </body>
+ </html>

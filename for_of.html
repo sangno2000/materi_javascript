@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>For of pada javascript</title>
+</head>
+<body>
+	
+	<script>
+		// For of
+		// * Jika for in di gunakan untuk melakukan iterasi property atau index, Sedangkan For of di gunakan untuk melakukan iterasi terhadap isi value dari iterable object,seperti array,string dan lain-lain
+		// * For of tidak bisa di gunakan untuk melakukan iterasi data di object,karena object bukan iterable.
+		// Contoh:
+		const names = ["hadi", "sucipto", "wanda"]; 
+		const names = "hadi sucipto"; 
+
+		for(const name of names){
+			document.write(name)
+		}
+		//jika di gunakan pada array. ini akan mengiterasi seluruh data yang ada pada aray, Dan hasil nya sepoerti berikut:
+		/*
+		hadi
+		sucipto
+		wanda
+		*///JIka di gunakan pada string,ini akan mengiterasi seluruh caracter  maka yang tampil seperti berikut:
+		/*
+		h
+		a
+		d
+		i
+
+		s
+		u
+		c
+		i
+		p
+		t
+		o
+		*/
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>switch expression pada javascript</title>
+</head>
+<body>
+	<script>
+		let result="B";
+		switch(result) {
+			case "A":
+			document.write("ini adallah isi dari variable a")
+			break;
+			case "C":
+			case "D":
+			document.write("ini adalah isi dari variable C")
+			break;
+			case "B":
+			document.write("ini adalah variable yang benar,yaitu variable B")
+			break;
+			default:
+			document.writeln("ini muncul jika variable yang diminta kosong/")
+//ini adalah operator switch operator pada javascript ,yang berfungsi seperti kita menggukan perintah if ekspression.yang fungsi nya hanya benar atau salah .
+		}
+
+		let latihan = prompt("masukkan pilihan makanan")
+		switch(latihan){
+			case "rendang" :
+			console.log("kamu memilih rendang")
+			break;
+			case "nasi" :
+			console.log("kamu memilih nasi")
+		}
+
+	
+	</script>
+</body>
+</html>

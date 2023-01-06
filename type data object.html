@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Type data object</title>
+
+</head>
+<body>
+
+	<script>
+	// 	Type data object
+	// Type data object adalah type data yang mirip dengan type data array
+	// yang membedakan adalah index pada type data object bisa menggunakan string
+	// Index di object biasa nya di sebut attribute atau properties bukan index
+
+	// Contoh :
+	let person = {}; //membuat type data object kosong
+
+	let orang = {
+		nama: "candra jatmico",
+		alamat: "besitang",
+		usia: "21 tahun"  //membuat data object secara langsung;
+	}
+
+	console.table(`usia : ${orang.usia}`) //untuk mengakses property object
+	person.nama={"hadi sucipto", "miranda", "wiwin"}
+	console.table(person)
+
+	//Di type data object bisa menggunakan buka kurung 
+	// Menambah atau mengubah
+	person["nama"] = "hadi sucipto";
+	person["alamat"]= "boogak besar";
+	person["usia"]= "21 tahun";
+
+	// delete person["alamat"] //di gunakan untuk menghapus data pada properties
+	// console.table(person);
+	
+
+
+
+	
+	</script>
+	}
+</body>
+</html>

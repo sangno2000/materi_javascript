@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Function generator</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+
+	<script>
+		// Function generator adalah function yang di gunakan untuk membuat data generator atau men-generete/meghasilkan.
+		// Generator adalah data yang bisa di iterasi seperti array.
+		// untuk membuat function generator, kita perlu menggunakan tanda * (bintang) setelah kata function .
+		// Dan untuk mengembalikan data di tiap iterasi, kita bisa gunakan kata kunci yield lalu di ikuti dengan data nya.
+		// Contoh:
+
+		// function* createNames (){
+		// 	yield "hadi sucipto";
+		// 	yield "miranda";
+		// 	yield "wiwin darmawati";
+		// 	yield "wanda agustia";
+		// }
+		// const names = createNames();
+
+		// for(const name of names){ //harus di lakukan iteration terlebioh dahulu untuk menampilkan data
+		// 	console.log(name)
+		// }
+
+		//Note: Data generator tidak bisa di akses langsung,tanpa Dilakukan iterasi data nya tidak akan bisa di tampilkan bahkan di ubah data nya juga tidak bisa
+
+		function* buatGanjil(value){
+			for(let i = 1; i <= value; i++){
+				if (i % 2 === 1){
+					// console.log(`yield ${i}`);
+					yield i;
+				}
+			}
+		}
+		let ganjil = buatGanjil(10);
+		for (let hitung of ganjil){
+			console.info(hitung)
+		}
+
+		// let names = ["hadi", "mira", "wiwin"];
+		// for (let name of names){
+		// 	console.log(name)
+		// }
+
+		function* countUpTo(max) {
+		  for (let f = 1; f <= max; f++) {
+		    yield f;
+		  }
+		}
+
+		const generator = countUpTo(5);
+
+		console.log(generator.next().value);  // 1
+		console.log(generator.next().value);  // 1
+		console.log(generator.next().value);  // 1
+		
+
+
+
+	</script>
+	
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Function  return value</title>
+</head>
+<body>
+	
+
+	<script>
+		// function nama(hadi, miranda){
+		// 	// let panggilan=`hallo ${hadi} ${miranda}`;
+		// 	// return panggilan;
+
+		// }
+		// nama("nama", "saya")
+	
+
+
+
+		// // penggunaan kata kunci return pada function
+		// function getKode(kode){
+		// 	if (kode >= 80) {
+		// 		return "wanda"		
+		// 	}else if (kode >=70) {
+		// 		return "miranda"
+		// 	}else if (kode >=50) {
+		// 		return "hadi"
+		// 	}else {
+		// 		return "wiwin(ini akan mucul jika nilai value bernilai false"
+		// 	}
+		// }
+		// const get=getKode(70);
+		// document.write(get)
+
+
+
+
+		// function konten(array, searchValue) {
+		// 	for (const element of array){
+		// 		if (element === searchValue) {
+		// 			return true;
+		// 		}
+		// 	}
+		// 	return false;
+		// }
+		// const array=[11,342,12,111,10];
+		// const cari= 10;
+		// const founds=konten(array, cari);
+
+		// if (founds) {
+		// 	document.write("Data yang kamu cari ada di dalam array")
+		// }else {
+		// 	document.write("mohon maaf kamu saat ini gagal")
+		// }
+
+		
+
+		// function media(array, dataLagu){
+		// 	for(let element of array){
+		// 		if (element === dataLagu) {
+		// 			return true;
+		// 		}
+		// 	}
+		// 	return false;
+		// }
+		// const array=["mendua", "cinta sabateh kawan", "antara nyamaman dan cinta"];
+		// const cariLagu= "cinta sabateh kawan";
+		// const result=media(array, cariLagu)
+
+		// if (result) {
+		// 	alert("Judul lagu yang kamu cari ada di dalam playlist")
+		// }else {
+		// 	alert("Mohon maaf lagu yang kamu cari tidak tersedia untuk saat ini")
+		// }
+
+
+		//mencari dan memastikan nilai value apakah ada di dalam array atau tidak
+		// let masukkan = parseInt(prompt("masukkan nilai yang ingin dicari"));
+		// function mencari(jumlah, cari){
+		// 	for (let hasil of jumlah){
+		// 		if (hasil === cari) {
+		// 			return true;
+		// 		}
+		// 	}
+		// 		return false;
+		// }
+		// let jumlah = [1,2,23,12,10.45,6];
+		// let search = masukkan;
+		// let mana = mencari(jumlah, search)
+		// if (mana) {
+		// 	console.log("Nilai yang kamu cari tersedia");
+		// }else {
+		// 	console.log("Nilai yang kamu cari tidak tersedia")
+		// }
+		// console.log(mana)
+
+
+		let nilai = prompt("masukkan nilai kamu?");
+
+		function cek(nilai){
+			if (nilai >= 80){
+				return console.log("Lulus!!")
+			}
+				return console.log("gagal")
+			
+			console.log(nilai)
+		}
+		cek(nilai)
+
+	</script>
+		
+
+
+		<!-- 		Function hanya bisa mengembalikkan satu data,jika kita ingin mengembalikkan beberapa data sekaligus,kita bisa menggunakan arrat sebagai 	return value nya7--> 
+		<!-- Secara default ,function itu tidak menghasilkann value apapun ,namun jika kita ingin ,kita bisa membuat function yang mengembalilkkan value 
+		Agar function bisa menghasilkan value,kita bisa menggunakan kata kunci return di dalam function nya
+		Dan di dalam block function,untuk menghasilkan nilai tersebut,kita harus menggunakan kata kunci return,lalu di ikuti dengan data yang ingin di hasilkan
+</body>
+</html>

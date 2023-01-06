@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>fungsi bind()</title>
+</head>
+<body>
+	
+ 	<script>
+ 		//penggunaan function bind(), di gunakan untuk meminjam property lain,contoh nya meminjaam metode fullname milik object person.
+
+			const person = {
+				firstName: "hadi",
+				lastName: "sucipto",
+				fullName : function(){
+					return this.firstName + this.lastName;
+				}
+			}
+
+			const member = {
+				firstName: "mira",
+				lastName: "nda"
+			};
+
+			let fullName = person.fullName.bind(member);
+			
+			console.table(fullName()) 
+ 	</script>
+
+
+</body>
+</html>

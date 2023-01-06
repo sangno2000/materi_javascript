@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Game tebak angka sederhana</title>
+<style>
+	 * {
+	 	box-sizing: border-box;
+
+	 }
+	 *, *:before, *:after {
+	 	box-sizing: inherit;
+	 }
+	
+	a:-webkit-any-link  {
+		text-decoration: underline;
+		cursor: pointer;
+	}
+</style>
+</head>
+<body>
+	<a href="#" id="dragbar" style= "width: 974px; top: 600px; left: 5px; height: 5px; cursor: row-resize;"></a>
+	<table id="myTable" style="border: 2px solid #333" rules="all">
+			  <tr>
+			    <th>Name</th>
+			    <th>Age</th>
+			    <th>City</th>
+			  </tr>
+			</table>
+
+
+
+	<script>
+
+		// function changeColor () {
+		// 	this.style.backgroundColor = 'red';
+		// }
+		
+		//membuat game tebak angka 1-10,jika user menjawab sama dengan computer.maka permainan draw dan di lakukan pengulangan sebanyak 3 kali kesempatan pemain untuk menebak.
+
+		// let ulang = true;
+ 	// 	while (ulang === true){
+ 	// 		let pemain = parseInt(prompt("input your guess number 1-10"));
+		// 	let computer = Math.floor(Math.random() *10);
+		// 	console.log(computer);
+
+		// 	for (let sempatan = 3-1; sempatan > 0; sempatan--) {
+		// 		if (pemain == computer) {
+		// 			alert("Tebakan kamu benar")
+		// 			break;
+		// 		};
+		// 		if (pemain < computer) {
+		// 			alert(`Tebakan kamu terlalu rendah,kesempatan kamu ${sempatan} kali lagi`);
+		// 			pemain = parseInt(prompt("input your guess number 1-10"));
+			
+		// 		}else if (pemain != computer && pemain > 10 ){
+		// 			alert("Angka yang kamu masukkan terlampau tinggi,please input your guess number 1-10");
+		// 			pemain = parseInt(prompt("input your guess number 1-10"));
+					
+		// 		}else {
+		// 			alert("tebakan yang di masukkan tidak di ketahui \n Harap masukkan angka")
+		// 			pemain = parseInt(prompt("input your guess number 1-10"));
+		// 		}
+				
+		// 		if (sempatan == 1 && pemain == computer) {
+		// 			alert("Tebakan kamu benar")
+		// 		}else if (sempatan == 1 && pemain != computer){
+		// 			alert("tebakan kamu salah!! \n kesempatan kamu sudah habis");
+
+		// 		}
+				
+		// 	}
+		// 	ulang = confirm("Mau bermain lagi?")
+		// }
+		// alert("Terimakasih sudah bermain")
+
+
+		//Game suwit jawa,menebak dengan gajah,semut,orang dengan computer;
+		 // confirm("Permainan game suwit jawa ,dengan menebak dan kalahkan komputer")
+		// let lagi =true;
+
+		// while (lagi === true){
+		// 	let user = prompt("GAJAH, SEMUT, ORANG")
+		// 	let result = "";
+
+		// 	//mendeskripsikan nilai random computer menjadi object
+		// 	let comp = Math.floor(Math.random() *10);	
+		// 	if (comp <= 3 ) {
+		// 		comp = "semut";
+		// 	}else if (comp <= 6){
+		// 		comp = "orang";
+		// 	}else{
+		// 		comp = "gajah";
+		// 	};
+
+		// 	console.log(comp)
+		// 		if (user == comp){
+		// 			result = "hasil draw"
+		// 		}
+		// 		if (user == "semut"){
+		// 			result = comp == "gajah" ? "kamu menang" : "kamu kalah"
+					
+		// 		}else if (user == "orang"){
+		// 			result = comp == "semut" ? "kamu menang" : "kamu kalah"
+					
+		// 		}else if (user == "gajah"){
+		// 			result = comp == "orang" ? "kamu menang" : "kamu kalah"
+					
+		// 		}else {
+		// 			result = "input yang kamu masukkan tidak di ketahui \n harap masukkan tebakan gajah, semut, dan orang."
+		// 		}
+		// 		alert(`Tebakan yang kamu masukkan ${user} dan computer == ${comp} .hasil permainan ${result}`)
+		// 	lagi = confirm("main lagi>??")
+
+
+
+		// }	
+		// alert("Terimakasih sudah bermain,,")
+
+		//program pengecekan angkot web programming hggxccxbbxnzm,mz\\z\\\mmm\\ nnnxnnnnnnm,,,m,mggggnmngvvhghghgvvbnnnnnn
+		// let noAngkot = "";
+		// let jumlahAngkot = 10;
+		// let angkotBeroperasi = 6 ;
+
+		// for (let noAngkot = 1; noAngkot <= jumlahAngkot; noAngkot++){
+		// 	if (noAngkot <= angkotBeroperasi && noAngkot != 5) {
+		// 		console.log(`Angkot No.${noAngkot} beroperasi dengan baik`)
+		// 	}else if (noAngkot == 5 || noAngkot == 8 || noAngkot == 10){
+		// 		console.log(`Angkot No.${noAngkot} sedang lembur`)
+		// 	}else {
+		// 		console.log(`Angkot No.${noAngkot} sedang tidak beroperasi`)
+		// 	}	
+		// } 
+
+
+		// ======================================
+		/*operator_typeof
+
+		let angka = 1;
+		let data = typeof angka ;
+
+		console.log(data) */
+		/*======================================
+		operator in */
+
+		/*let data = {
+			nama : "hadi sucipto",
+			usia : 23,
+			domisili : "jln balikpapan-samboja ,rt.01 kel margomulyo"
+		}
+		if ("nama" in data) {
+			console.log(data.nama)
+		}else {
+			console.log("data yang kamu cari tidak di ketahui")
+		}
+
+		====================================
+*/
+		/*let data = "nama gua nurul";
+
+		if ( data === null || data === undefined) {
+			console.log("value dari data adalah null/undefined")
+		}else {
+			console.log("value yang dari variable data bukan null/undefined")
+		}
+
+		let check = data ?? "Nilai null atau undefined" //Jika niilai value dari data bukan null atau undefined, maka value nya akan di tampilkan.kalau data bernilai null makan nilai check yg akan di tampilkan
+		console.log(check)*/
+
+/*
+		let praktek = 80;
+		let ujian = 75;
+		let nilaiPraktek = parseInt(prompt("Masukkan nilai ujian praktek"));
+		let nilaiUjian = parseInt(prompt("Masukkan nilai ujian semester"));
+   
+		function fungsi(nilaiPraktek, nilaiUjian) {
+			let hasil = "";
+			if (nilaiPraktek < praktek) {
+				if (nilaiUjian < ujian) {
+					hasil = "TIDAK LULUS \n Nilai kamu tidak mencukupi"
+				}
+			}else if (nilaiPraktek >= praktek) {
+				if (nilaiUjian >= ujian) {
+					hasil = "LULUS!!\n Selamat kamu lulus"
+				}
+			};  
+			if (nilaiPraktek && nilaiUjian ) {}
+			return console.log(hasil);
+		}
+
+		fungsi(nilaiPraktek, nilaiUjian)
+		console.log(fungsi)
+*/
+		
+
+
+		// let dataLengkap = {
+		// 	name: 'hadi sucipto',
+		// 	domisli : "indonesia",
+		// 	nama : {
+		// 		kucing : "meong",
+		// 		usia : "4 bulan"
+		// 	}
+	// }		
+		// console.log(dataLengkap.nama)
+		// let isi = dataLengkap?.first?? "data property tidak ada"
+
+		// const employee = {
+		//   name: 'Franc',
+		//   department: {
+		//     name: 'sales'
+		//   }
+		// };
+
+		// let kaitkan = employee?.department?.name
+		// console.log(kaitkan) 
+
+
+
+		  // let saudara = ["hadi" , "miranda", "wiwin", "wanda", "mustika", "M syarif"];
+		  // saudara.push("hardi", "dedek", "anin")
+		  // delete saudara[6]
+		  // saudara[0]="hadi sucipto"
+		  // console.table(saudara);
+
+		  // let anggota = {
+		  // 	nama : "hadi sucipto",
+		  // 	usia : 23,
+		  // 	alamat : {
+		  // 		jalan : "dusun 1"
+		  // 	}
+
+		  // }
+		  // anggota["street"] = "bogak besar";
+		  // anggota["nama"] = "bogak";
+
+		  // console.table(anggota.alamat)
+
+		  // let jika = saudara[6] == undefined ? "data yg anda cari kosong/ undefined" : "data yang di cari ada";
+		  // console.table(jika);
+
+
+		  // function angka(a){
+		  // 	if (a === 100){
+		  // 		return;
+		  // 	}
+		  // 	console.log(a);
+		  // 	angka(a+1)
+		  // }
+		  // angka(1)
+		  // buat tutorial 5x4x3x2x1
+		 //  function tutorial(n){
+		 //  	if (tutorial === 0){
+		 //  		return  1;	
+		 //  	} 
+		 //  	return n * tutorial(n-1);
+		 //  	console.log(n)	
+		 //  }
+			// tutorial(5)
+			// let f = prompt("masukkan nilai yang ingin di factor")
+			// function faktorial(f){
+			// 	if (faktorial === 0) return 1;
+			// 	let hasil = f;
+			// 	hasil * faktorial(f-1);
+			// 	console.log(f)
+			// }
+			// faktorial(f)
+			// function nilai(f){
+			// 		if (f === 0)return 1;
+			// 	for (let hasil ){
+			// 		hasil * nilai(f-1)
+			// 		console.log(hasil)
+			// 	}	
+			// }
+			// 	nilai(6);
+			// function memutar(a, b){
+			// 	if (a === 10+1) {
+			// 		return;
+			// 		if (b === 1) {
+			// 			return;
+			// 		}
+
+			// 	}
+			// 	memutar(a+1, b-1)
+			// 	let sum = a * b;
+			// 	console.log(`hasil perkalian dari ${a}X${b}=${sum}`);
+				
+			// }
+			// memutar(1,10)
+			
+
+			// keyword this
+			// let person = {
+			// 	firstName: "hadi",
+			// 	lastName: "sucipto",
+			// 	fullName: function(){
+			// 		return this.firstName + " " + this.lastName
+			// 	}
+			// }
+			
+	
+			// console.log(person.fullName())	
+
+			
+ 	// 		let rangka = parseFloat(0.1+0.2);
+ 	// 		console.log(` hasil 0.1 + 0.4 = ${rangka}`)
+
+ 	// 		let x = 0.2 + 0.1;
+		// // document.getElementById("demo").innerHTML = "0.2 + 0.1 = " + x;
+		// console.log(x)
+
+		// 	function displayDate() {
+		// 		document.getElementById("date").innerHTML= Date();
+		// 	}
+
+
+		
+
+		
+
+	</script> 	
+	
+</body>
+</html>   

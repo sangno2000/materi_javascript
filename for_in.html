@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>for in pada javascript</title>
+</head>
+<body>
+	
+
+ 	<script>
+
+ 			//pengulangan for in pada javascript
+ 		
+ 			
+ 			//contoh pada object
+ 		let name= {
+ 			namaLengkap:"hadi sucipta",
+ 			namaDepan:"hadi",
+ 			namaBelakang:"sucipto"
+ 		}
+ 		for(let property in name){
+ 			document.write(`<p>${property}:${name[property]}</p>`);
+ 		}
+
+ 		//contoh di gunakan pada variable array
+
+ 		const contoh=["hadi","miranda","wiwim","agustia"]
+
+ 		for(const nama in contoh) {
+ 			document.write(`<p>${nama}: ${contoh[nama]}</p>`)
+ 		}//pengulangan for in juga bisa di gunakan pada arrar,untuk mengambil data array
+
+ 		//For in 
+ 	//di gunakan untuk mengakses sebuah property di dalam object
+
+
+
+
+
+
+
+ 		let family = {
+ 			nama : ["m syarif", "mustika"],
+ 			usia : " 40 tahun"
+
+ 		}
+ 		for (let biodata in family){
+ 			console.log(`${biodata} ${family[biodata]}`)
+ 		}
+ 		let who = ["hardi", "wahyu", "agus"];
+ 		for (let siapa in who ) {
+ 			console.log(`${siapa}: ${who[siapa]}`)
+ 		}
+ 	</script>
+
+</body>
+</html>
